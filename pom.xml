@@ -12,7 +12,7 @@
 	<groupId>com.devsuperior</groupId>
 	<artifactId>bds04</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bds04</name>
+	<name>bds03</name>
 	<description>Bootcamp Spring React DevSuperior</description>
 
 	<properties>
@@ -51,7 +51,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<scope>myclientid</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>org.junit.vintage</groupId>
