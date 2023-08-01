@@ -5,6 +5,7 @@ import java.time.LocalDate;
 
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import com.devsuperior.bds04.entities.Event;
 
@@ -20,7 +21,7 @@ public class EventDTO implements Serializable {
 	private LocalDate date;
 	private String url;
 	
-	@NotBlank(message = "Campo requerido")
+	@NotNull(message = "Campo requerido")
 	private Long cityId;
 	
 	public EventDTO() {

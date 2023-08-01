@@ -38,18 +38,18 @@ public class CityService {
 		return new CityDTO(entity);
 	}
 	
-    public void delete(Long id) {
-		try {
-			repository.deleteById(id);
-			
-		}
-		catch (EmptyResultDataAccessException e) {
-			throw new ResourceNotFoundException("CV - Id not found " + id);
-		}
-		catch (DataIntegrityViolationException e) {
-			throw new DatabaseException("CV - Integrity violation");
-		}
-    }
+//    public void delete(Long id) {
+//		try {
+//			repository.deleteById(id);
+//			
+//		}
+//		catch (EmptyResultDataAccessException e) {
+//			throw new ResourceNotFoundException("CV - Id not found " + id);
+//		}
+//		catch (DataIntegrityViolationException e) {
+//			throw new DatabaseException("CV - Integrity violation");
+//		}
+//    }
 
 
 	

@@ -45,7 +45,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 		http.authorizeRequests()
 		.antMatchers(PUBLIC).permitAll()
 		//Neste sistema, somente as rotas de leitura (GET) de eventos e cidades são públicas (não precisa de login).
-		//.antMatchers(HttpMethod.GET, OPERATOR_GET).hasAnyRole("CLIENT","ADMIN")
+		.antMatchers(HttpMethod.GET, OPERATOR_GET).permitAll()
 		//Usuários CLIENT podem também inserir (POST) novos eventos.
 		.antMatchers(HttpMethod.POST, OPERATOR_POST).hasAnyRole("CLIENT")
 		// Os demais acessos são permitidos apenas a usuários ADMIN.
